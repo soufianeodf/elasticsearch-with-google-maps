@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Google Maps - Pebblekraft</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!--  <link rel="stylesheet" href="css/normalize.css">-->
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <div class="container-fluid" style="height: 100%">
+    <div class="row d-flex justify-content-center align-items-center" style="height: 100%">
+      <div class="card" style="width: 80%;">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+              <h5 class="card-title">Geo Location</h5>
+              <input type="text" class="search-input" id="autocomplete" placeholder="Start typing the address to search...">
+              <button type="button" class="btn save-location">Save Location</button>
+          </div>
+          <p class="card-text-pebblekraft">Location service will automatically pick your exact location. If you want to save that location please click on " Save Location". If you want to search for another location search by using the above text box. Pin point the exact location on the map by moving around in the map and click on the exact location. Then press "Save location". Your exact Geo Location will be saved.</p>
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--  <script src="js/vendor/modernizr-3.11.2.min.js"></script>-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAs4TvKn0R9-p98PC9IcuxLOz7ag-ivRFo&libraries=places&callback=initMap"></script>
+</body>
+
+</html>
